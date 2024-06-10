@@ -206,7 +206,7 @@ const SendResetPasswordEmail = async (req, res) => {
     });
     return res
       .status(200)
-      .json({ success: true, message: "Password reset link sent ", info });
+      .json({ success: true, message: "Password reset link sent ", link });
   } catch (error) {
     console.log(error);
     return res.status(500).json({
